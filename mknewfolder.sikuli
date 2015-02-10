@@ -1,0 +1,9 @@
+def randomdir():
+    import time
+    import random
+    import os
+    d = str(time.strftime("%d%m%Y"))
+    rdm = str(random.randint(100,999))
+    dir = "c:/Users/user/Documents/Reports/" + d + "_" + rdm + "/"
+    os.mkdir(dir)
+    return dir
